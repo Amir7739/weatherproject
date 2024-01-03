@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "piazzolla", serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+:root {
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.row {
+    margin: 0;
+}
+
+.main_menu {
+    background-color: var(--main-bg);
+}
+
+.navbar-brand:hover {
+    color: rgb(49, 49, 111);
+}
+
+.navbar {
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: 2rem 0;
+}
+
+.navbar li {
+    margin-left: 2rem;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.navbar-toggler {
+    background-color: grey;
+}
+
+.main_header_left {
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.main_header_left p {
+    font-size: 2rem;
+
+}
+
+.main_header_left h1 {
+    font-size: 3rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+
+}
+
+.main_header_left button {
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+
+.main_header_left button:hover {
+    box-shadow: 0 8px 6px -6px #000;
+    color: var(--main-bg);
+}
+
+.main_header_left .txt-clr {
+    color: rgb(49, 49, 111);
+}
+
+.main_header_right {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+/* temp details show here */
+.tempInformation {
+    width: 40rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 80px;
+    margin-right: 100px;
+}
+
+.top_layer {
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 2rem 0;
+}
+
+.top_layer p {
+    color: #fff;
+    font-weight: 300;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.main-layer {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.main-layer #city_name {
+    padding: 2rem 0;
+    color: #bfc1c8;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.main-layer .middle_layer {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.main-layer .middle_layer p,
+.main-layer .middle_layer .fa {
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+sup {
+    font-size: 2.5rem;
+    margin-top: -1rem;
+
+}
+
+#temp {
+    color: #fff;
+    font-size: 3rem;
+}
+
+/* error message */
+.err-msg img {
+    width: 30rem;
+    height: 20rem;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.data_hide {
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+/* input fields */
+.temp_form {
+    width: 60%;
+    position: relative;
+    margin: 10rem auto 6rem;
+}
+
+.temp_form input[type="text"] {
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background-color: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+}
+
+::placeholder {
+    color: #bfc1c8;
+}
+
+.temp_form {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+}
+
+.temp_form input[type="submit"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009adb;
+    padding: 0 4rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.temp_form input[type="submit"]:hover {
+    color: #009adb;
+    background-color: #fff;
+}
+
+/* footer styles */
+
+footer {
+    width: 100%;
+    background-color: var(--main-bg);
+}
+
+
+.main_header_left .err {
+    text-align: center;
+    margin-left: 100px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 3rem;
+    font-size: 2rem;
+}
+
+/* responsive code */
+@media(max-width:768px) {
+    .main_header_left {
+        height: auto;
+        margin: 5rem 0;
+    }
+
+    .main_header_right {
+        height: auto;
+        margin-top: 3rem;
+    }
+}
+
+.img-fluid {
+    width: 75%;
+}
+
+.main_header_right figure img {
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 3));
+}

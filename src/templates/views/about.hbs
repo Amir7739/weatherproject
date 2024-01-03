@@ -1,0 +1,43 @@
+<html lang="en">
+
+  <head>
+    {{>links}}
+
+  <body>
+
+{{!-- partials file data --}}
+{{>navbar}}
+
+    <!-- main-header -->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 max-auto">
+          <div class="row">
+            <!-- right side div -->
+            <div class="col-md-6 col-12 main_header_right align-items-center">
+              <figure>
+                <img
+                  src="images/1.jpg"
+                  alt="amir"
+                  class="img-fluid"
+                  title="amir techincal"
+                />
+              </figure>
+            </div>
+            <!-- left side div -->
+            <div class="col-md-6 col-12 main_header_left">
+              <p>Welcome to in my about page</p>
+              <h1>I am a <span class="txt-clr">SOFTWARE WEB DEVELOPER.</span></h1>
+              <a href="https://github.com/Amir7739"><button>About me</button></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+   {{>footer}}
+  </body>
+
+</html>
